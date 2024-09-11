@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="icon" href="mark.png" />
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="Css/main.css">
+</head>
+
+<body>
+    <div class="capt interface py-5 bg- position-relative">
+        <div class="cont d-flex flex-column justify-content-center align-items-center">
+            <h1 class="font-main position-relative fw-semibold w-auto">Bookmarker</h1>
+            <div
+                class="bookmark-body w-100 p-3 py-4 mt-5 d-flex flex-column justify-content-center align-items-center gap-4">
+                <h2>
+                    <i class="fa-solid fa-bookmark"></i>
+                    Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark"></i>
+
+                </h2>
+                <div class="site_name w-100 d-flex flex-column justify-content-center">
+                    <label for="bookmarkName" class="pb-2 fw-semibold">
+                        <i class="fa-solid fa-book-bookmark pe-2 ms-1"></i>
+                        Site Name
+                    </label>
+                    <input type="text" placeholder="Bookmark Name" class="form-control" id="bookmarkName"
+                        spellcheck="false" data-ms-editor="true">
+                </div>
+                <div class="site_url w-100 d-flex flex-column justify-content-center ">
+                    <label for="bookmarkUrl" class="pb-2 fw-semibold">
+                        <i class="fa-solid fa-link  pe-2 ms-1"></i>
+                        Site URL
+                    </label>
+                    <input type="url" placeholder="Website URL" class="form-control" id="bookmarkURL">
+                </div>
+                <button class="btn btn-submit px-5" id="submitBtn">Submit</button>
+            </div>
+            <table class="table mt-4 text-center bg-light">
+                <thead>
+                    <tr>
+                        <th class="text-capitalize">index</th>
+                        <th class="text-capitalize">Website Name</th>
+                        <th class="text-capitalize">Visit</th>
+                        <th class="text-capitalize">Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tableContent">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <footer class="text-center py-3 mt-5">
+        <p>&copy; <span id="copyrightYear"></span> Bookmarker App. All rights reserved By EL-SHIMAA EBRAHIM.</p>
+      </footer>
+
+</body>
+
+</html>
